@@ -1,27 +1,28 @@
 def calculate_grade(grades):
     if not grades:
-        return "No grades provided"
+        return None, "No grades provided"
     
     average = sum(grades) / len(grades)
     
     if average >= 95:
-        return 'A+'
+        letter_grade = 'A+'
     elif average >= 90:
-        return 'A'
+        letter_grade = 'A'
     elif average >= 85:
-        return 'B+'
+        letter_grade =  'B+'
     elif average >= 80:
-        return 'B'
+        letter_grade = 'B'
     elif average >= 75:
-        return 'C+'
+        letter_grade =  'C+'
     elif average >= 70:
-        return 'C'
+        letter_grade =  'C'
     elif average >= 65:
-        return 'D+'
-    else:
-        return 'F'
-    
+        letter_grade =  'D+'
+    elif average <= 65:
+        letter_grade = 'F'
+
     return average, letter_grade
+    
 
 
 grades = []
@@ -32,6 +33,9 @@ for num in range(num_grades):
     grades.append(grade)
     
 average, letter_grade = calculate_grade(grades)
-    
-print("The average grade is: " + str(average))
-print("The letter grade is: " + str(letter_grade))
+
+print(f"\n{'Grade Report':^30}")
+print(f"{'-' * 30}")
+print(f"Number of Grades: {num_grades:>20}")
+print(f"Average Grade: {average:>20.2f}")
+print(f"Letter Grade: {letter_grade:>20}")

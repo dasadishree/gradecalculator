@@ -7,4 +7,4 @@ https://docs.google.com/document/d/1clpNUQOs-RkvXVEOALBQZzRHAz3Rk64tsn6oEXa8nag/
 ^^^ a tutorial i made
 
 download the file and run the command:
-**_python3 gradecalculator.py_**
+**_python3 gradecalculator.py_** to view my project!!

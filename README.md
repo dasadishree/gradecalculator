@@ -5,3 +5,6 @@ a project that calculates the average of grades inputted, making this for part o
 https://docs.google.com/document/d/1clpNUQOs-RkvXVEOALBQZzRHAz3Rk64tsn6oEXa8nag/edit?usp=sharing
 
 ^^^ a tutorial i made
+
+download the file and run the command:
+**_python3 gradecalculator.py_**
